@@ -2,4 +2,17 @@
 layout: main
 title: BrunoCoin
 ---
-<p>You have <span>0</span> BrunoCoin<span>s</span>.</p>
+<p>You have <span id="brunocoincount">0</span> BrunoCoin<span id="grammars1">s</span>.</p>
+<script>
+  var brunoCoinCount = document.getElementById("brunocoincount")
+  var grammarSOne = document.getElementById("grammars1")
+  var brunocoins = localStorage.getItem("brunocoin")
+  if (brunocoins) {
+    brunoCoinCount.innerHTML = brunocoins
+    if ()
+  } else {
+    localStorage.setItem("brunocoin", "1")
+    brunocoins = localStorage.getItem("brunocoin")
+    brunoCoinCount.innerHTML = brunocoins
+  }
+</script>
