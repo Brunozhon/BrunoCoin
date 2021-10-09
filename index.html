@@ -6,12 +6,18 @@ title: BrunoCoin
 <script>
   var brunoCoinCount = document.getElementById("brunocoincount")
   var grammarSOne = document.getElementById("grammars1")
-  var brunocoins = localStorage.getItem("brunocoin")
+  var brunocoins = Number(localStorage.getItem("brunocoin"))
   if (brunocoins) {
     brunoCoinCount.innerHTML = brunocoins
+    if (brunocoins == 1) {
+      grammarSOne.style.display = "none"
+    } else {
+      grammarSOne.style.display = "inline"
+    }
   } else {
     localStorage.setItem("brunocoin", "1")
-    brunocoins = localStorage.getItem("brunocoin")
+    brunocoins = Number(localStorage.getItem("brunocoin"))
+    grammarSOne.style.display = "none"
     brunoCoinCount.innerHTML = brunocoins
   }
 </script>
