@@ -2,11 +2,13 @@
 layout: main
 title: BrunoCoin
 ---
+<h1 style="display: none;" id="welcome">Welcome!</h1>
 <p>You have <span id="brunocoincount">0</span> BrunoCoin<span id="grammars1">s</span>. You can...</p>
 <p>>> Mine for more BrunoCoin!</p>
 <script>
   var brunoCoinCount = document.getElementById("brunocoincount")
   var grammarSOne = document.getElementById("grammars1")
+  var welcome = document.getElementById("welcome")
   var brunocoins = Number(localStorage.getItem("brunocoin"))
   if (brunocoins) {
     brunoCoinCount.innerHTML = brunocoins
@@ -20,5 +22,8 @@ title: BrunoCoin
     brunocoins = Number(localStorage.getItem("brunocoin"))
     grammarSOne.style.display = "none"
     brunoCoinCount.innerHTML = brunocoins
+  }
+  if (location.search = "?welcome") {
+    welcome.style.display = "block"
   }
 </script>
