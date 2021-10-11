@@ -1,5 +1,5 @@
 ---
 layout: main
-title: Discussions are Avaviable!!
+title: Discussions are Available!!
 ---
-Coming soon!
+I finally launched Discussions on October 10, 2021! [Take me there!](https://github.com/Brunozhon/BrunoCoin/discussions)
