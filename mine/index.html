@@ -2,4 +2,12 @@
 layout: main
 title: Mine For BrunoCoin | BrunoCoin
 ---
-<p>Coming soon!</p>
+<button>Mine</button>
+<script>
+  var brunocoins = Number(localStorage.getItem("brunocoin"))
+  function mine() {
+    localStorage.setItem("brunocoin", String(brunocoins + 1))
+    brunocoins = brunocoins + 1
+    
+  }
+</script>
