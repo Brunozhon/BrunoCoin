@@ -2,12 +2,11 @@
 layout: main
 title: Mine For BrunoCoin | BrunoCoin
 ---
-<button>Mine</button>
+<button onclick="mine()">Mine</button>
 <script>
   var brunocoins = Number(localStorage.getItem("brunocoin"))
   function mine() {
     localStorage.setItem("brunocoin", String(brunocoins + 1))
-    brunocoins = brunocoins + 1
-    
+    brunocoins = brunocoins + 0.01
   }
 </script>
