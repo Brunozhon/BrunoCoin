@@ -6,7 +6,7 @@ title: Mine For BrunoCoin | BrunoCoin
 <script>
   var brunocoins = Number(localStorage.getItem("brunocoin"))
   function mine() {
-    localStorage.setItem("brunocoin", String(brunocoins + 0.01))
+    localStorage.setItem("brunocoin", String((brunocoins * 100 + 1) / 100))
     brunocoins = (brunocoins * 100 + 1) / 100
   }
 </script>
