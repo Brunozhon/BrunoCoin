@@ -10,19 +10,19 @@ title: BrunoCoin
   var grammarSOne = document.getElementById("grammars1")
   var welcome = document.getElementById("welcome")
   var brunocoins = Number(localStorage.getItem("brunocoin"))
-  //if (brunocoins) {
+  if (brunocoins) {
     brunoCoinCount.innerHTML = brunocoins
     if (brunocoins == 1) {
       grammarSOne.style.display = "none"
     } else {
       grammarSOne.style.display = "inline"
     }
-  //} else {
+  } else {
     localStorage.setItem("brunocoin", "1")
     brunocoins = Number(localStorage.getItem("brunocoin"))
     grammarSOne.style.display = "none"
     brunoCoinCount.innerHTML = brunocoins
-  //}
+  }
   if (location.search == "?welcome") {
     welcome.style.display = "block"
   }
