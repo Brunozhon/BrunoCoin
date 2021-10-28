@@ -3,8 +3,17 @@ layout: main
 title: Autumn Spelling | BrunoCoin
 ---
 <p>Spelling list:</p>
-<ol>
+<table>
+  <tr>
+    <th>Word</th>
+    <th>Meaning</th>
+    <th>Example</th>
+  </tr>
   {% for item in site.data.autumnspellinglist %}
-  <li>{{ item.word }}</li>
+  <tr>
+    <td>{{ item.word }}</td>
+    <td>{{ item.meaning }}</td>
+    <td>{{ item.example }}</td>
+  </tr>
   {% endfor %}
-</ol>
+</table>
