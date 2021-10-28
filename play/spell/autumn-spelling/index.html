@@ -2,4 +2,9 @@
 layout: main
 title: Autumn Spelling | BrunoCoin
 ---
-<p>Days:</p>
+<p>Spelling list:</p>
+<ol>
+  {% for item in site.data.autumnspellinglist %}
+  <li>{{ item.word }}</li>
+  {% endfor %}
+</ol>
