@@ -4,11 +4,7 @@ title: Autumn Spelling | BrunoCoin
 ---
 <p>Spelling list:</p>
 <ol>
-  <li>autumn</li>
-  <li>leaves</li>
-  <li>red</li>
-  <li>orange</li>
-  <li>pile</li>
-  <li>rake</li>
-  <li>bag</li>
+  {% for item in site.data.autumnspellinglist %}
+  <li>{{ item.word }}</li>
+  {% endfor %}
 </ol>
