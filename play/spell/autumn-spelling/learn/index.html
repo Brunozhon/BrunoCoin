@@ -10,10 +10,8 @@ title: Learn | BrunoCoin
     </div>
     {% for item in site.data.autumnspellinglist %}
     <div class="carousel-item">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>{{ item.word }}</h1>
-        <p>{{ item.meaning }}</p>
-      </div>
+      <h1 class="text-center">{{ item.word }}</h1>
+      <p class="text-center">{{ item.meaning }}</p>
     </div>
     {% endfor %}
   </div>
