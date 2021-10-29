@@ -3,17 +3,17 @@ layout: main
 title: Autumn Spelling | BrunoCoin
 ---
 <p>Spelling list:</p>
-<table>
-  <tr>
-    <th>Word</th>
-    <th>Meaning</th>
-    <th>Example</th>
+<table style="border: 1px solid green; border-collapse: collapse;">
+  <tr style="border: 1px solid green; border-collapse: collapse;">
+    <th style="border: 1px solid green; border-collapse: collapse;">Word</th>
+    <th style="border: 1px solid green; border-collapse: collapse;">Meaning</th>
+    <th style="border: 1px solid green; border-collapse: collapse;">Example</th>
   </tr>
   {% for item in site.data.autumnspellinglist %}
-  <tr>
-    <td>{{ item.word }}</td>
-    <td>{{ item.meaning }}</td>
-    <td>{{ item.example }}</td>
+  <tr style="border: 1px solid green; border-collapse: collapse;">
+    <td style="border: 1px solid green; border-collapse: collapse;">{{ item.word }}</td>
+    <td style="border: 1px solid green; border-collapse: collapse;">{{ item.meaning }}</td>
+    <td style="border: 1px solid green; border-collapse: collapse;">{{ item.example }}</td>
   </tr>
   {% endfor %}
 </table>
